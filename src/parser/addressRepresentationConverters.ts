@@ -38,7 +38,7 @@ export const cellAddressFromString = (sheetMapping: SheetMappingFn, stringAddres
   }
 
   if (sheet === null) {
-    sheet = undefined
+    sheet = baseAddress.sheet
   }
 
   const row = Number(result[8]) - 1
